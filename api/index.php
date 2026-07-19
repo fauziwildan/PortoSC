@@ -1,7 +1,6 @@
-<?php declare(strict_types = 1);
-
-if (isset($_GET['all'])) {
-    phpinfo();
-} else {
-    phpinfo(INFO_ALL & ~INFO_ENVIRONMENT & ~INFO_CONFIGURATION & ~INFO_VARIABLES);
-}
+<?php
+/**
+ * Here is the serverless function entry
+ * for deployment with Vercel.
+ */
+require __DIR__.'/../public/index.php';
